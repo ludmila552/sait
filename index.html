@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        font-family: sans-serif;
+        }
+        html, body, .container{
+            min-height: 100vh;
+            width: 100wh;
+             }
+        .header {
+            background: rgb(240, 122, 161);
+            color:rgb(104, 99, 100);
+            grid-area: header; 
+        }
+        .main {
+           background: rgb(211, 204, 204); 
+           grid-area: main;
+        }
+        .sidebar {
+            background: rgb(201, 198, 198);
+            grid-area: sidebar;
+        }
+        .footer {
+            background: rgb(204, 200, 200);
+            grid-area: footer;
+        }
+        ul {
+            display: flex;
+            flex-direction:row;
+            justify-content: space-between;
+            list-style: none;
+        }
+       
+        .logo{
+            grid-column: 2;
+        }
+       .promo-inner{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #FCF1F5;
+            }
+            h1{
+                color:rgb(240, 122, 161);
+
+            }
+            h2 {
+                color: rgb(240, 122, 161);
+            }
+            p{
+                color:rgb(104, 99, 100);
+            }
+            .boder-radius{
+                display: flex;
+                background: rgb(240, 122, 161);
+                border: 1px solid rgb(240, 122, 161);
+                border-radius: 50px;
+            }
+            a{
+                color:rgb(201, 198, 198);
+                        }
+            .galeri{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            float: left;
+            margin-left: 40px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-right: 40px;
+            padding: 20px;
+                    }
+           .about-inner1{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+           } 
+           .keck {
+            text-align: center;
+            margin-left: 40px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-right: 40px;
+            padding: 30px;
+            padding-top: 20px;
+           }  
+           .promo1{
+            margin-right: 100px;
+           }
+           .promo2{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: 200px;
+            margin-left: 40px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding: 20px;
+                       }
+         .block
+         {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            float: left;
+            margin-left: 40px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-right: 40px;
+            padding: 30px;
+            padding-top: 20px;
+                       }
+        .about-inner{
+            background: #FCF1F5;
+            padding: 10px;
+        }
+
+         .footer_one{
+            display: flex;
+            flex-direction: row;
+            justify-content: center; 
+            padding: 20px 20px 20px 20px;
+            margin:  20px 20px 20px 20px;
+            background: rgb(240, 122, 161);
+                     }
+         h3{
+            
+            font:  color: rgb(240, 122, 161) ;
+         }
+        @media (min-width:980px){
+            .container-grid{
+                display: grid;
+                grid-template: 80px 1fr 90px/10% 1fr 10%;
+                grid-template-areas: 
+                "header header header "
+                ". main  ."
+                "footer footer footer ";
+                 
+            }
+            .header-grid{
+            display: grid;
+            grid-template-columns: 10% 100px 1fr 11%;
+            align-content: center;
+                    }
+            nav{
+                grid-column: 3;
+            }
+            .Logo{
+                grid-column: 2;
+            }
+
+            
+            .promo-desc{
+                padding: 40px;
+            }
+            h1{
+                color:rgb(240, 122, 161);   
+            }
+            p{
+                color:rgb(104, 99, 100);
+            }
+            .boder-radius{
+                display: flex;
+                background: rgb(240, 122, 161);
+                border: 1px solid rgb(240, 122, 161);
+                border-radius: 50px;
+            }
+            a{
+                color:rgb(201, 198, 198);
+                        }
+         
+        }
+  </style>
+</head>
+<body>
+    <!-- srthfh -->
+    <div class="container-grid">
+        <header class="header header-grid">
+        <div class="Logo">Кекс</div>
+        <nav>
+            <ul>
+            <li><a href="">О нас</a></li>
+            <li><a href="">Каталог</a></li>
+            <li><a href="">Наши преимущества</a></li>
+            <li><a href="">8 800 444 44 44</a></li>
+            <!-- <li><a href="">link5</a></li> -->
+         </ul>
+            </ul>
+        </nav>
+    </div>
+        </header>
+       
+        <main class="main">           
+            <section class="promo">
+                <div class="contaner">
+                    <div class="promo-inner">
+                        <div class="promo-desc">
+                            <h1>Лучшие кексы в г. Ростове-на-Дону</h1>
+                            <p>Скидка при доставка от 1000 рублей</p>
+                            <div class="boder-radius">
+                                <a href="">Заказать десерт</a>
+                            </div>
+                        </div>
+                        <div class="promo1">
+                            <img src="img/Rectangle 20.png">
+                                     </div>
+                    </div>
+                </div>		
+            </section>
+        
+            <section class="about">
+                <div class="contaner"> 
+                    <div class="about-inner1">  
+                        <div >
+                            <ul class="galeri">
+                                <li><img src="img/Rectangle 21.png"></li>
+                                <li><img src="img/Rectangle 22.png"></li>
+                                <li><img src="img/Rectangle 24.png"> </li>
+                                <li><img src="img/Rectangle 25.png"></li>
+                           </ul>
+                           <div class="promo2">
+                                <h1>О нас</h1>
+                            <p>Если бы мы писали книгу, она бы называлась «Завтраки и ещё три причины полюбить утренний город».
+                                Завтраки в Кекс с 7:00 до 18:00 🕕🔥                                
+                                В эти выходные с 7:00 до 11:00 в пекарне на Пушкинской 192 будем угощать игристым к каждому завтраку ❤ Игривое настроение обеспечено!
+                                </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </section>
+                            
+        <section class="about">
+                <div class="contaner"> 
+                    <div class="about-inner"> 
+                        <div>
+                            <ul class="block">
+                                <li><h2>Всегда лучшие сорта муки</h2></li>
+                                <li><h2>Самые свежие продукты</h2></li>
+                                <li><h2>Дорогое оборудование</h2></li>
+                                <li><h2>Большой опыт</h2></li>
+                                <li><h2>Творческий подход</h2></li>
+                                <li><h2>За работой мастера своего дела</h2></li>
+                           </ul>
+                           <div class="keck">
+                            <img src="img/Rectangle 20 (1).png" 
+                           </div>                       
+                        </div>                       
+                  </div>               
+              </div>	
+            </section>        
+        
+        </main>
+        <!-- <aside class="sidebar">3</aside> -->
+        <footer class="footer">
+            <div class="footer_one">
+                <ul>
+                    <li> <h3> <font size="5" color="pink" face="Aria"> Согласие на сохранение Cookie </font></h3> </li>
+                    <li> <h3> <font size="5" color="pink" face="Aria"> Политика конфидециальности </font></h3> </li>
+                    <li> <h3> <font size="5" color="pink" face="Aria"> &#169; 2022, Кекс </font></h3> </li>
+                </ul>
+                
+
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
